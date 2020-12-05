@@ -1,0 +1,35 @@
+﻿// hello
+###
+GET http://localhost:13501/v1.0/invoke/dotnetapp/method/hello?name=zyg
+
+###
+GET http://localhost:5000/hello?name=zyg
+
+//save state
+
+###
+POST http://localhost:13501/v1.0/invoke/dotnetapp/method/order
+
+{"id":"42"}
+
+###
+POST http://localhost:5000/norder
+Content-Type: application/json
+
+{"id":"41"}
+
+//get state
+
+###
+GET http://localhost:13501/v1.0/invoke/dotnetapp/method/order
+
+###
+GET http://localhost:5000/order
+
+//delete state
+
+###
+DELETE http://localhost:13501/v1.0/invoke/dotnetapp/method/order
+
+###
+DELETE http://localhost:5000/order

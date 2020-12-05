@@ -1,5 +1,5 @@
 ﻿```sh
-dapr run --app-id dotnetapp --app-port 5001 --dapr-http-port 13500 -- dotnet run
+dapr run --app-id dotnetapp --app-port 5000 --dapr-http-port 13501 -- dotnet run
 ```
 
 ```powershell
